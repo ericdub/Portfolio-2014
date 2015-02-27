@@ -10,11 +10,10 @@ echo '<h1 class=\'entry-title\'>Portfolio</h1>';
 // The loop
 
 
-
 if ( have_posts() ) :
     while (have_posts() ) :
         the_post();
-
+    
         /* Blog */
         if(is_home()){
 
@@ -72,7 +71,7 @@ if ( have_posts() ) :
         }
         /* Archive */
         elseif(is_archive()){
-
+            
             /* check if bbPress is active */
             if( function_exists( 'is_bbpress' ) ) {
 

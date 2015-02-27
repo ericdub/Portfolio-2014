@@ -1,20 +1,31 @@
 <?php 
-//Dequeue Contact Form 7 stuff
 add_filter( 'wpcf7_load_js', '__return_false' );
 add_filter( 'wpcf7_load_css', '__return_false' );
 
-//Load Google Recaptcha API if on contact form
-function load_google_recaptcha() {
 
-    if (is_page_template('contact.php')) {
+/*function ct_tracks_excerpt_read_more_link2($output) {
+		remove_filter('the_excerpt', 'ct_tracks_excerpt_read_more_link');
+			global $post;
 
+			if ( is_archive( 'jetpack-portfolio' ) ) {
+    
 
-        wp_enqueue_script('recaptcha', 'https://www.google.com/recaptcha/api.js', false, '20141203',false);
+			return $output . "<p><a class='more-link' href='". get_permalink() ."'>View project <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
 
-    }
+			} else {
+			return $output . "<p><a class='more-link' href='". get_permalink() ."'>Read post <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
+			} 
+			
+		
+		
+		} */
 
-} 
-add_action('wp_enqueue_scripts', 'load_google_recaptcha');
+//add_filter('the_excerpt', 'ct_tracks_excerpt_read_more_link2');
+//remove_filter('the_excerpt', 'ct_tracks_excerpt_read_more_link');
+
+    // filter the link on excerpts
+   
+	
 
 
 ?>
