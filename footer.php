@@ -9,7 +9,11 @@
     <?php if(get_bloginfo('description') && ( get_theme_mod('tagline_display_setting') == 'header-footer' ) || ( get_theme_mod('tagline_display_setting') == 'footer' )){ ?>
         <p class="site-description"><?php bloginfo('description'); ?></p>
     <?php } ?>
+<<<<<<< HEAD
 <h4>eric.r.watkins@gmail.com | 803.386.7835</h4>
+=======
+<h4>eric@threehour.co | 803.386.7835</h4>
+>>>>>>> 4aa195d1895b4ec3bc5bc9cfab8324b3e2ada766
 
     <?php
         // add footer menu if set
@@ -56,4 +60,8 @@
 
 <?php wp_footer(); ?>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 4aa195d1895b4ec3bc5bc9cfab8324b3e2ada766

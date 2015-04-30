@@ -6,22 +6,19 @@
 $comments_display = get_theme_mod('ct_tracks_comments_setting');
 
 
-echo '<h1 class=\'entry-title\'>Portfolio</h1>';
+echo '<h1 class=\'entry-title\'>I\'m Eric. I build great Web sites. </h1>';
 // The loop
 
 
-<<<<<<< HEAD
+$args = array(
+    'post_type' => 'jetpack-portfolio'
+);
+$wp_query = new WP_Query( $args );
 
-if ( have_posts() ) :
-    while (have_posts() ) :
-        the_post();
-
-=======
-if ( have_posts() ) :
-    while (have_posts() ) :
-        the_post();
+ if($wp_query->have_posts()) : 
+      while($wp_query->have_posts()) : 
+         $wp_query->the_post();
     
->>>>>>> 4aa195d1895b4ec3bc5bc9cfab8324b3e2ada766
         /* Blog */
         if(is_home()){
 
@@ -35,7 +32,7 @@ if ( have_posts() ) :
             }
             /* Blog - No Premium Layout */
             else {
-                get_template_part('content');
+                get_template_part('content-jetpack-portfolio');
             }
         }
         /* Post */
@@ -53,7 +50,7 @@ if ( have_posts() ) :
         }
         /* Page */
         elseif(is_page()){
-            get_template_part('content', 'page');
+            get_template_part('content-jetpack-portfolio');
 
             // error prevention
             if( is_array( $comments_display ) ) {
@@ -79,11 +76,7 @@ if ( have_posts() ) :
         }
         /* Archive */
         elseif(is_archive()){
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 4aa195d1895b4ec3bc5bc9cfab8324b3e2ada766
             /* check if bbPress is active */
             if( function_exists( 'is_bbpress' ) ) {
 
@@ -127,8 +120,6 @@ if( function_exists( 'is_bbpress' ) ) {
         ct_tracks_post_navigation();
     }
 
-} else {
-    ct_tracks_post_navigation();
 }
 
 ?>
