@@ -1,20 +1,11 @@
 /*
 Theme Name: Three Hour Away Town  2014
-<<<<<<< HEAD
-Description: Child theme that defines custom CSS and cutom fields on THAT
-=======
-Description: Child theme that defines custom CSS and fields on THAT
->>>>>>> 4aa195d1895b4ec3bc5bc9cfab8324b3e2ada766
+Description: Custom blog CSS
 Author: Eric Watkins
 Version: 0.1
 Template: tracks
 */
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 4aa195d1895b4ec3bc5bc9cfab8324b3e2ada766
 @import url('../tracks/style.css');
 
 .main .home-archive{
@@ -28,7 +19,6 @@ margin-top: 0em;
 <<<<<<< HEAD
 margin-bottom: 0em; 
 }
-=======
+
  margin-bottom: 0em; 
 }
->>>>>>> 4aa195d1895b4ec3bc5bc9cfab8324b3e2ada766
