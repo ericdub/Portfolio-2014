@@ -1,0 +1,22 @@
+/*
+Theme Name: Three Hour Away Town  2014
+Description: Child theme that defines custom CSS and cutom fields on THAT
+Author: Eric Watkins
+Version: 0.1
+Template: tracks
+*/
+
+
+
+@import url('../tracks/style.css');
+
+.main .home-archive{
+width: 88.89%;
+max-width: 1280px;
+margin: 0 auto;
+}
+
+.home-archive .featured-image {
+margin-top: 0em; 
+margin-bottom: 0em; 
+}
